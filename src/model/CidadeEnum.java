@@ -1,13 +1,13 @@
 package model;
 
-public class CidadeEnum {
-    curitiba("Curitiba"),
-    campo_largo("Campo Largo"),
-    ponta_grossa("Ponta Grossa"),
+public enum CidadeEnum {
+    CURITIBA("Curitiba"),
+    CAMPO_LARGO("Campo Largo"),
+    PONTA_GROSSA("Ponta Grossa");
 
     private String nome;
 
-    private CidadeEnum(String nome){
+    private CidadeEnum(String nome) {
         this.nome = nome;
     }
 
@@ -21,7 +21,8 @@ public class CidadeEnum {
 
     @Override
     public String toString() {
-        return "CidadeEnum [nome=" + nome + "]";
+        return nome;
     }
-    
+
+
 }
