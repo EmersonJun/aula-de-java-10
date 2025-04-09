@@ -5,5 +5,7 @@ public class App {
         System.out.println("Hello, World!");
         model.App.main(args);
         App.main(args);
+
+        System.out.println(CidadeEnum.curitiba);
     }
 }
